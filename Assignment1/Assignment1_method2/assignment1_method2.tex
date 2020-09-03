@@ -1,0 +1,104 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{tabularx} % extra features for tabular environment
+\usepackage{amsmath}  % improve math presentation
+\usepackage{graphicx} % takes care of graphic including machinery
+\usepackage[margin=1in,letterpaper]{geometry} % decreases margins
+\usepackage{cite} % takes care of citations
+\usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
+\hypersetup{
+	colorlinks=true,       % false: boxed links; true: colored links
+	linkcolor=blue,        % color of internal links
+	citecolor=blue,        % color of links to bibliography
+	filecolor=magenta,     % color of file links
+	urlcolor=blue         
+}
+%\usepackage{blindtext}
+%++++++++++++++++++++++++++++++++++++++++
+
+
+\begin{document}
+
+\title{
+EE5609: MATRIX THEORY \\
+    Assignment 1}
+%\subtitle{Assignment 1}
+\author{Sneha Konduru\\ee19acmtech11009}
+\date{\today}
+\maketitle
+
+
+
+
+\section{Question (3.7.39)}
+
+The line through the points \begin{pmatrix}
+h\\
+3
+\end{pmatrix} and \begin{pmatrix}
+4\\
+1
+\end{pmatrix}
+intersects the line \begin{pmatrix}
+7 & -9
+\end{pmatrix} $\myvec{\textbf{x}}$=19 at right angle. Find the value of h.
+
+\section{Solution}
+Directional vector of line passing through points \textbf{A}=\begin{pmatrix}
+h\\
+3
+\end{pmatrix} and \textbf{B}=\begin{pmatrix}
+4\\
+1
+\end{pmatrix} is 
+\begin{equation}
+\textbf{P}=\textbf{B}-\textbf{A}  \tag{1}
+\end{equation}
+\begin{equation}
+    \textbf{P}=\begin{pmatrix}
+h-4\\
+2
+\end{pmatrix}  \tag{2}
+\end{equation}
+Directional vector of the line \begin{pmatrix}
+a & b
+\end{pmatrix}$\myvec{\textbf{x}}$=c is 
+\begin{equation}
+\textbf{Q}=\begin{pmatrix}
+b\\
+-a
+\end{pmatrix}   \tag{3}
+\end{equation}
+From (3.7.39.3) direction vector of
+line \begin{pmatrix}
+7 & -9
+ 
+\end{pmatrix}$\myvec{\textbf{x}}$=19 is 
+\begin{equation}
+\textbf{Q}=\begin{pmatrix}
+-9\\
+-7
+\end{pmatrix}  \tag{4}
+\end{equation}
+If two straight lines intersects at right angles then inner product of their directional vectors \textbf{P} and \textbf{Q} is zero.
+\begin{equation}
+    {\textbf{P}^\textbf{T}}\textbf{Q}=0  \tag{5}
+\end{equation}
+
+\begin{equation}
+    \begin{pmatrix}
+h-4\\
+2
+\end{pmatrix}^\textbf{T} \begin{pmatrix}
+-9\\ 
+-7
+\end{pmatrix}=0  \tag{6}
+\end{equation}
+\begin{equation}
+  (h-4)(-9)+2(-7)=0   \tag{7}
+\end{equation}
+  
+ \begin{equation}
+  h=\dfrac{22}{9}  \tag{8}
+\end{equation}
+    
+\end{document}
